@@ -28,7 +28,7 @@ namespace Pingler
         {
             selectdomain = 0;
             listBox1.Items.Clear();
-            listBox2.Items.Clear();
+            dataGridView1.Rows.Clear();
             progressBar1.Value = 0;
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
@@ -74,17 +74,18 @@ namespace Pingler
             try
             {
                 Ping pingdomain = new Ping();
-                PingReply replydomain = pingdomain.Send(Convert.ToString(listBox1.SelectedItem), 1000);
+                PingReply replydomain = pingdomain.Send(Convert.ToString(listBox1.SelectedItem), 2000);
                 if (replydomain != null)
                 {
-                    listBox2.Items.Add(Convert.ToString(listBox1.SelectedItem) + " | " + replydomain.Address);
+                    dataGridView1.Rows.Add(Convert.ToString(listBox1.SelectedItem), replydomain.Address);
+
                 }
                 
             }
 
             catch
             {
-                listBox2.Items.Add(Convert.ToString(listBox1.SelectedItem) + " | Error!");
+                dataGridView1.Rows.Add(Convert.ToString(listBox1.SelectedItem), "Error");
             }
 
             selectdomain++;
@@ -99,7 +100,6 @@ namespace Pingler
         private void Form1_Load(object sender, EventArgs e)
         {
             pingbtn.Enabled = false;
-            rprbtn.Enabled = false;
 
         }
 
@@ -109,13 +109,8 @@ namespace Pingler
             timer2.Stop();
             listBox1.Items.Clear();
             pingbtn.Enabled = false;
-            rprbtn.Enabled = true;
             button1.Enabled = true;
         }
 
-        private void rprbtn_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Coming Soon :] ");
-        }
     }
 }

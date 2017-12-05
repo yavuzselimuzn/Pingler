@@ -1,10 +1,13 @@
 c:\users\admin\source\repos\Pingler\Pingler\bin\Debug\Pingler.exe.config
 c:\users\admin\source\repos\Pingler\Pingler\bin\Debug\Pingler.exe
 c:\users\admin\source\repos\Pingler\Pingler\bin\Debug\Pingler.pdb
-c:\users\admin\source\repos\Pingler\Pingler\obj\Debug\Pingler.csprojResolveAssemblyReference.cache
 c:\users\admin\source\repos\Pingler\Pingler\obj\Debug\Pingler.Form1.resources
 c:\users\admin\source\repos\Pingler\Pingler\obj\Debug\Pingler.Properties.Resources.resources
 c:\users\admin\source\repos\Pingler\Pingler\obj\Debug\Pingler.csproj.GenerateResource.Cache
 c:\users\admin\source\repos\Pingler\Pingler\obj\Debug\Pingler.csproj.CoreCompileInputs.cache
 c:\users\admin\source\repos\Pingler\Pingler\obj\Debug\Pingler.exe
 c:\users\admin\source\repos\Pingler\Pingler\obj\Debug\Pingler.pdb
+C:\Users\admin\source\repos\Pingler\Pingler\bin\Debug\Pingler.exe.manifest
+C:\Users\admin\source\repos\Pingler\Pingler\bin\Debug\Pingler.application
+C:\Users\admin\source\repos\Pingler\Pingler\obj\Debug\Pingler.exe.manifest
+C:\Users\admin\source\repos\Pingler\Pingler\obj\Debug\Pingler.application
